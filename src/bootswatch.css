@@ -1,0 +1,213 @@
+/*!
+* Bootswatch v5.1.3
+* Homepage: https://bootswatch.com
+* Copyright 2012-2021 Thomas Park
+* Licensed under MIT
+* Based on Bootstrap
+*/
+/*!
+* Bootstrap v5.1.3 (https://getbootstrap.com/)
+* Copyright 2011-2021 The Bootstrap Authors
+* Copyright 2011-2021 Twitter, Inc.
+* Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+*/
+
+/* bootstrap css */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+:root {
+  --bs-blue: #4c9be8;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #e83e8c;
+  --bs-red: #d9534f;
+  --bs-orange: #f0ad4e;
+  --bs-yellow: #ffc107;
+  --bs-green: #5cb85c;
+  --bs-teal: #20c997;
+  --bs-cyan: #5bc0de;
+  --bs-white: #fff;
+  --bs-gray: #868e96;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #ebebeb;
+  --bs-gray-200: #4e5d6c;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #868e96;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #4c9be8;
+  --bs-secondary: #4e5d6c;
+  --bs-success: #5cb85c;
+  --bs-info: #5bc0de;
+  --bs-warning: #ffc107;
+  --bs-danger: #d9534f;
+  --bs-light: #abb6c2;
+  --bs-dark: #20374c;
+  --bs-primary-rgb: 76, 155, 232;
+  --bs-secondary-rgb: 78, 93, 108;
+  --bs-success-rgb: 92, 184, 92;
+  --bs-info-rgb: 91, 192, 222;
+  --bs-warning-rgb: 255, 193, 7;
+  --bs-danger-rgb: 217, 83, 79;
+  --bs-light-rgb: 170.516129, 182.25, 193.983871;
+  --bs-dark-rgb: 32, 55, 76;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-black-rgb: 0, 0, 0;
+  --bs-body-color-rgb: 235, 235, 235;
+  --bs-body-bg-rgb: 15, 37, 55;
+  --bs-font-sans-serif: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #ebebeb;
+  --bs-body-bg: #0f2537;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+html,
+body,
+* {
+  font-family: var(--bs-body-font-family); 
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0'%3E%3Cstop offset='0' stop-color='%230FF'/%3E%3Cstop offset='1' stop-color='%23CF6'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23F00'/%3E%3Cstop offset='1' stop-color='%23FC0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='2'%3E%3Cpath transform='translate(0 0)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='4' transform='rotate(0 800 450)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(0 0)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='4'%3E%3Cpath transform='translate(0 0)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='8' transform='rotate(0 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='rotate(0 1400 132)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #A9A9A9;
+  width: 700px;
+  margin: 50px auto;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.home h1{
+  text-align: center;
+  font-size: 40px;
+}
+
+.form{
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  width:100%;
+  margin-bottom: 10px;
+}
+
+.form input[type="text"]{
+  padding: 8px;
+  width: 80%;
+  border: 1px solid #A9A9A9;
+  border-radius: 4px;
+}
+
+.form input[type="text"]:focus,
+.form button[type="submit"]:focus,
+.item button:focus{
+  outline: none;
+}
+
+.form button[type="submit"]{
+  background-color: steelblue;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.list{
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+}
+
+.item{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.update{
+  background-color: goldenrod;
+  width:70px;
+  margin: 10px;
+}
+
+.delete{
+  background-color: red;
+  width:70px;
+  margin: 10px;
+  padding: 4px;
+}
+
+.item button{
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.content{
+  position: relative;
+  margin-top: 10px;
+}
+
+.updateForm{
+  display: flex;
+  justify-content:space-between;
+  width:100%;
+}
+
+.updateForm input[type="text"]{
+  padding: 8px;
+  width: 80%;
+  border: 1px solid #A9A9A9;
+  border-radius: 4px;
+}
+
+.updateForm input[type="text"]:focus,
+.updateForm button[type="submit"]:focus,
+.updateForm button:focus{
+  outline: none;
+}
+
+.updateForm button[type="submit"]{
+  background-color: blue;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+}
